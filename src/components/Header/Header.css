@@ -1,0 +1,18 @@
+.header {
+    min-height: 8vh;
+    max-height: 8vh;
+    display:  flex;
+    align-items: center;
+    background-color: rgb(63, 63, 63);
+}
+
+.links {
+    margin-left: auto;
+    margin-right: 5px;
+}
+
+.navlink {
+    text-decoration : none;
+    color: azure;
+    padding: 5px;
+}
