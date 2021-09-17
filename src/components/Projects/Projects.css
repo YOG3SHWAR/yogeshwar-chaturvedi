@@ -1,0 +1,45 @@
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  color: azure;
+}
+
+ul {
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  background: #6B5BA6;
+  padding: 20px;
+  border-radius: 25px;
+}
+
+li {
+  max-height: 150px;
+  background-color: #693C91;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  overflow: auto;
+  cursor: pointer;
+}
+
+li:last-child {
+  margin-bottom: 0px;
+}
+
+.link {
+  background-color: #6B5BA6;
+  border: none;
+  color: black;
+  padding: 10px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  margin: 4px 2px;
+  margin-top: 10px;
+  cursor: pointer;
+}

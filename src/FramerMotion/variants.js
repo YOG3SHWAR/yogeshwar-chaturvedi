@@ -9,6 +9,7 @@ export const routeVariants = {
   },
   exit: {
     x: 1000,
+    opacity: 0,
     transition: {
       ease: "easeInOut",
     },
