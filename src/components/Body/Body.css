@@ -1,0 +1,12 @@
+.body {
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    min-width: fit-content;
+    height: 80vh;
+    border: 2px solid azure;
+    border-radius: 5%;
+    margin: 0% auto;
+    padding: 1% 5%;
+    background-color: rgba(255,255,255,0.2);
+}

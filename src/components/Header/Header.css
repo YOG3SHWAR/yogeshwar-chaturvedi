@@ -1,19 +1,21 @@
 .header {
     min-height: 8vh;
     max-height: 8vh;
+    min-width: fit-content;
     display:  flex;
     align-items: center;
+    margin: 0.5% 0;
 }
 
 .links {
     width: 100%;
     border-bottom: 3px solid azure;
     border-radius: 20%;
-    justify-content: end;
+    justify-content: flex-end;
     padding-bottom: 10px;
     display: flex;
-    padding-right: 10%;
-    margin: 1%;
+    padding-right: 5%;
+    /* margin: 1%; */
 }
 
 .navlink {

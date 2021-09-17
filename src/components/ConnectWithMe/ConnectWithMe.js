@@ -5,15 +5,19 @@ import "./ConnectWithMe.css";
 
 function ConnectWithMe() {
   return (
-    <div>
+    <div className="connect">
       <a href="https://github.com/YOG3SHWAR" target="GitHub">
-        <img className="logo" src={github} alt="GitHub" />
+        <div className="card">
+          <img className="logo" src={github} alt="GitHub" />
+        </div>
       </a>
       <a
         href="https://www.linkedin.com/in/yogeshwar-chaturvedi/"
         target="Linkedin"
       >
-        <img className="logo" src={linkedin} alt="GitHub" />
+        <div className="card">
+          <img className="logo" src={linkedin} alt="GitHub" />
+        </div>
       </a>
     </div>
   );
