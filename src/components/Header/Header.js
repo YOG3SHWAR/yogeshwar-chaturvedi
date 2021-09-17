@@ -24,9 +24,9 @@ function Header() {
     },
     whileTap: {
       scale: 0.8,
-      rotate: -90,
+      rotate: -180,
       transition: {
-        duration: 0.1,
+        duration: 0.2,
       },
     },
 
