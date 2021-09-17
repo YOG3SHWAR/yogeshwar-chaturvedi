@@ -12,7 +12,7 @@ function Header() {
     },
     whileHover: {
       textShadow: "0px 0px 15px rgb(51, 50, 50)",
-      scale: 1.1,
+      scale: 1.04,
     },
   };
 
@@ -30,7 +30,7 @@ function Header() {
       },
     },
 
-    whileHover: { scale: 1.2, rotate: 0, x: 0, y: 0 },
+    whileHover: { scale: 1.1, rotate: 0, x: 0, y: 0 },
   };
 
   const pathVariants = {
@@ -101,11 +101,11 @@ function Header() {
           </motion.div>
           <motion.div variants={linkVariants} whileHover="whileHover">
             <NavLink
-              to="/contact"
+              to="/connect"
               className="navlink"
               activeClassName="selected"
             >
-              Contact Me
+              Connect With Me
             </NavLink>
           </motion.div>
         </motion.div>
