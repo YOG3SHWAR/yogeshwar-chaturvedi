@@ -12,13 +12,14 @@
     justify-content: end;
     padding-bottom: 10px;
     display: flex;
+    padding-right: 10%;
 }
 
 .navlink {
     text-decoration : none;
     color: azure;
     margin: 10px;
-    padding-top: 5px;
+    padding: 10px;
 }
 
 .selected {

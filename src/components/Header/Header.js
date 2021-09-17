@@ -12,6 +12,7 @@ function Header() {
     },
     whileHover: {
       textShadow: "0px 0px 15px rgb(51, 50, 50)",
+      scale: 1.1,
     },
   };
 
@@ -21,6 +22,15 @@ function Header() {
       rotate: 0,
       transition: { duration: 1 },
     },
+    whileTap: {
+      scale: 0.8,
+      rotate: -90,
+      transition: {
+        duration: 0.1,
+      },
+    },
+
+    whileHover: { scale: 1.2, rotate: 0, x: 0, y: 0 },
   };
 
   const pathVariants = {
@@ -43,6 +53,7 @@ function Header() {
       <motion.div className="header">
         <NavLink to="/" className="navlink">
           <motion.svg
+            style={{ originX: "50%", originY: "50%" }}
             // width="auto"
             height="5vh"
             viewBox="0 0 200 200"
@@ -51,6 +62,8 @@ function Header() {
             variants={svgVariants}
             initial="hidden"
             animate="visible"
+            whileTap="whileTap"
+            whileHover="whileHover"
           >
             <motion.path
               d="M99.8975 112.899L127.729 59.3594H143.696L106.929 126.229V166H92.8662V126.229L56.0986 59.3594H72.2119L99.8975 112.899Z"
