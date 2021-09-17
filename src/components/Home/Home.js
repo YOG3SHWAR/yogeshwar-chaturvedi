@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { routeVariants } from "../../FramerMotion/variants";
 
-function Projects() {
+function Home() {
   return (
     <motion.div
       className="connect"
@@ -11,8 +11,9 @@ function Projects() {
       animate="animate"
       exit="exit"
     >
-      Projects
+      Home
     </motion.div>
   );
 }
-export default Projects;
+
+export default Home;

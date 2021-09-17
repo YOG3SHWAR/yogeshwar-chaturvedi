@@ -10,7 +10,7 @@
 .card {
     margin: 5px;
     padding: 10px;
-    width: 30vw;
+    /* width: 30vw; */
     height: 5em;
     border-radius: 15px;
     background-color: rgba(72, 26, 72, 0.9);

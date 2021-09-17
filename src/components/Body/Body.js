@@ -1,11 +1,13 @@
 import React from "react";
-import { Route, Switch } from "react-router-dom";
+import { Route, Switch, useLocation } from "react-router-dom";
 import Projects from "../Projects/Projects";
 import ConnectWithMe from "../ConnectWithMe/ConnectWithMe";
 import "./Body.css";
-import { motion } from "framer-motion";
+import { AnimatePresence, motion } from "framer-motion";
+import Home from "../Home/Home";
 
 function Body() {
+  const location = useLocation();
   const bodyVariants = {
     hidden: {
       y: 1000,
@@ -13,7 +15,7 @@ function Body() {
     },
     visible: {
       y: 0,
-      opacity: 0.5,
+      opacity: 1,
       transition: { delay: 0.2, type: "spring", stiffness: 50 },
     },
     whileFocus: {
@@ -27,17 +29,19 @@ function Body() {
       initial="hidden"
       animate="visible"
     >
-      <Switch>
-        <Route exact path="/">
-          Home
-        </Route>
-        <Route path="/projects">
-          <Projects />
-        </Route>
-        <Route path="/connect">
-          <ConnectWithMe />
-        </Route>
-      </Switch>
+      <AnimatePresence exitBeforeEnter>
+        <Switch location={location} key={location.key}>
+          <Route exact path="/">
+            <Home />
+          </Route>
+          <Route path="/projects">
+            <Projects />
+          </Route>
+          <Route path="/connect">
+            <ConnectWithMe />
+          </Route>
+        </Switch>
+      </AnimatePresence>
     </motion.div>
   );
 }
