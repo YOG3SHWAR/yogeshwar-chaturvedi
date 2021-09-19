@@ -21,10 +21,10 @@ function ScrollBar() {
       className="scroll"
       drag="x"
       dragConstraints={{ left: 0, right: 800 }}
-      dragMomentum={false}
+      // dragMomentum={false}
       dragElastic={0.1}
       dragTransition={{ bounceStiffness: 100, bounceDamping: 10 }}
-      onDrag={(event, info) => changeRoute(info.point.x)}
+      onDragEnd={(event, info) => changeRoute(info.point.x)}
     >
       <motion.svg
         version="1.0"
