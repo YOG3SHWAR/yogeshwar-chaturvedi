@@ -9,11 +9,13 @@ li {
 
 ul {
   width: 50vw;
+  max-height: 50vh;
   display: flex;
   flex-direction: column;
   background: #6B5BA6;
   padding: 20px;
   border-radius: 25px;
+  overflow: auto;
 }
 
 li {
@@ -22,7 +24,7 @@ li {
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 20px;
-  overflow: auto;
+  /* overflow: auto; */
   cursor: pointer;
 }
 

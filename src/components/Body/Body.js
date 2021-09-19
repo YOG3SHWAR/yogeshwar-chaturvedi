@@ -5,6 +5,7 @@ import ConnectWithMe from "../ConnectWithMe/ConnectWithMe";
 import "./Body.css";
 import { AnimatePresence, motion } from "framer-motion";
 import Home from "../Home/Home";
+import ScrollBar from "../ScrollBar/ScrollBar";
 
 function Body() {
   const location = useLocation();
@@ -42,6 +43,7 @@ function Body() {
           </Route>
         </Switch>
       </AnimatePresence>
+      <ScrollBar />
     </motion.div>
   );
 }
