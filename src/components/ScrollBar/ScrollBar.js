@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import React, { useState } from "react";
+import React from "react";
 import { useHistory, useLocation } from "react-router";
 import "./ScrollBar.css";
 
@@ -7,16 +7,12 @@ function ScrollBar() {
   const history = useHistory();
   const location = useLocation();
   function changeRoute(x) {
-    console.log(x, location.pathname);
     if (x <= 350 && location.pathname !== "/") {
       history.push("/");
-      console.log("/");
     } else if (x > 350 && x <= 700 && location.pathname !== "/projects") {
       history.push("/projects");
-      console.log("prj");
     } else if (x > 700 && location.pathname !== "/connect") {
       history.push("/connect");
-      console.log("conn");
     }
   }
 
